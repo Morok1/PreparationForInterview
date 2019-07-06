@@ -1,4 +1,4 @@
-package com.smagin.codingforinterview.datastructure;
+package com.smagin.codingforinterview.datastructure.interfaces;
 
 public interface Collection<T> {
     T pop();
