@@ -18,18 +18,28 @@ package com.smagin.codingforinterview.binarysearch;
  */
 
 public class ClosetBinarySearchTreeValue {
+    //TODO Доделать
     public double closestValue(TreeNode root, double target) {
+        double diff = 0d;
 
+        if (Math.abs(root.getValue() - target) < diff) {
+            diff = compute(root.getLeft(), target);
+        } else {
+            diff = compute(root.getRight(), target);
+        }
+        return 0;
     }
 
-    public double compute(TreeNode node1, TreeNode node2) {
-        return Math.abs(node1.getValue() - node2.getValue());
+
+
+    public double compute(TreeNode node1, double target) {
+        return Math.abs(node1.getValue() - target);
     }
 
     public class TreeNode {
-        double value;
-        TreeNode left;
-        TreeNode right;
+        private double value;
+        private TreeNode left;
+        private TreeNode right;
 
         public TreeNode(int value) {
             this.value = value;
@@ -37,6 +47,26 @@ public class ClosetBinarySearchTreeValue {
 
         public double getValue() {
             return value;
+        }
+
+        public void setValue(double value) {
+            this.value = value;
+        }
+
+        public TreeNode getLeft() {
+            return left;
+        }
+
+        public void setLeft(TreeNode left) {
+            this.left = left;
+        }
+
+        public TreeNode getRight() {
+            return right;
+        }
+
+        public void setRight(TreeNode right) {
+            this.right = right;
         }
     }
 }
