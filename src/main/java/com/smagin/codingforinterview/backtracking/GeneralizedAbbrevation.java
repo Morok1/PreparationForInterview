@@ -11,7 +11,7 @@ public class GeneralizedAbbrevation {
         Character[] characters = new Character[]{'a', 'b', 'c'};
 
         String newWord = generate(word, characters[new Random().nextInt(characters.length)]);
-        strings.add(newWord)
+        strings.add(newWord);
         return strings;
     }
 
