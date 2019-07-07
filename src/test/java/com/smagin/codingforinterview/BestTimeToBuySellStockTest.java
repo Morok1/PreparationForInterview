@@ -1,5 +1,6 @@
 package com.smagin.codingforinterview;
 
+import com.smagin.codingforinterview.arrays.BestTimeToBuySellStock;
 import org.junit.Before;
 import org.junit.Test;
 

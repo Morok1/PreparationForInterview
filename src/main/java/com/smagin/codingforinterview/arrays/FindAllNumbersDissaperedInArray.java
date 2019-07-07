@@ -1,4 +1,4 @@
-package com.smagin.codingforinterview;
+package com.smagin.codingforinterview.arrays;
 
 //Given an array of integers where 1 ≤ a[i] ≤ n (n = size of array), some elements appear twice and others appear once.
 //
