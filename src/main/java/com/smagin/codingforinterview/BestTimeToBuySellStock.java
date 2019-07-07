@@ -19,16 +19,19 @@ package com.smagin.codingforinterview;
 
 public class BestTimeToBuySellStock {
     public int computeProfit(int[] prices) {
-        int currentMin  = Integer.MAX_VALUE;
-        int diff;
+        int currentMin = Integer.MAX_VALUE;
+        int diff = Integer.MIN_VALUE;
         for (int i = 0; i < prices.length; i++) {
-            if(currentMin > prices[i]){
+            if (currentMin > prices[i]) {
                 currentMin = prices[i];
+            }
 
+            if (prices[i] - currentMin > diff ) {
+                diff = prices[i] - currentMin;
             }
         }
 
-        return 0;
+        return diff;
     }
 
     public static void main(String[] args) {
