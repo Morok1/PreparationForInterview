@@ -16,7 +16,6 @@ package com.smagin.codingforinterview;
 
 // In this case, no transaction is done, i.e. max profit = 0.
 
-
 public class BestTimeToBuySellStock {
     public int computeProfit(int[] prices) {
         int currentMin = Integer.MAX_VALUE;
@@ -25,12 +24,10 @@ public class BestTimeToBuySellStock {
             if (currentMin > prices[i]) {
                 currentMin = prices[i];
             }
-
             if (prices[i] - currentMin > diff ) {
                 diff = prices[i] - currentMin;
             }
         }
-
         return diff;
     }
 
