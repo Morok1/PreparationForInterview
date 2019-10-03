@@ -11,6 +11,7 @@ public class Question6 {
         list.add(30);
         q.m1(list);
 
+
     }
 
     private void m1(List<?> list){
